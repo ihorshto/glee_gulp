@@ -5,6 +5,7 @@
 
 .header {
   padding: 45px 0;
+
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -16,9 +17,11 @@
   &__list {
     display: flex;
   }
-  &__list-item + .menu__list-item {
+
+  &__list-item+.menu__list-item {
     padding-left: 35px;
   }
+
   &__list-link {
     font-size: 15px;
     line-height: 12px;
@@ -30,14 +33,17 @@
 .user-nav {
   display: flex;
   align-items: center;
-  &__link{
+
+  &__link {
     position: relative;
   }
-  &__link + .user-nav__link {
+
+  &__link+.user-nav__link {
     padding-left: 80px;
   }
-  &__num{
-    position: absolute; 
+
+  &__num {
+    position: absolute;
     height: 16px;
     width: 16px;
     border-radius: 50%;
@@ -50,9 +56,10 @@
     text-align: center;
     @extend %dmsans-400;
   }
-  &__search{
+
+  &__search {
     position: absolute;
-    border-radius: 50% ;
+    border-radius: 50%;
     width: 50px;
     height: 50px;
     background-color: #d7dde2;
@@ -60,7 +67,8 @@
     right: -16px;
     z-index: -1;
   }
-  &__heart-cart{
+
+  &__heart-cart {
     position: absolute;
     width: 178px;
     height: 50px;
@@ -68,9 +76,10 @@
     background-color: #fcd7b6;
     top: -18px;
     left: 49px;
-    z-index: -1; 
+    z-index: -1;
   }
-  &__heart-cart:before{
+
+  &__heart-cart:before {
     content: "";
     position: absolute;
     width: 1px;
@@ -79,10 +88,12 @@
     top: 9px;
     left: 90px;
   }
-  &__link:last-child{
+
+  &__link:last-child {
     padding-right: 15px;
   }
-  &__ellipse{
+
+  &__ellipse {
     position: absolute;
     border-radius: 50%;
     width: 50px;
@@ -94,8 +105,6 @@
   }
 
 }
-
-
 
 
 
