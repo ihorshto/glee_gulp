@@ -205,7 +205,6 @@
 
 .footer-bottom {
   margin-top: 34px;
-  padding-bottom: 40px;
   display: flex;
   justify-content: space-between;
   font-size: 14px;
@@ -678,9 +677,150 @@
   }
 }
 
+.articles {
+  &-container {
+    max-width: 1190px;
+    margin: 0 auto;
+    padding: 0 10px;
 
+  }
 
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
 
+  &__link {
+    @extend %dmsans-700;
+    color: #262626;
+    position: relative;
+    padding-right: 20px;
+  }
+
+  &__link::after {
+    content: ">";
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    top: 0;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.article__item {
+  max-width: 370px;
+  width: 100%;
+  box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+  border-radius: 5px;
+
+  &-imglink {
+    position: relative;
+  }
+
+  &-img {
+    height: 250px;
+    object-fit: cover;
+  }
+
+  &-img--news {
+    position: absolute;
+    text-transform: uppercase;
+    background-color: #a3bbc8;
+    padding: 4px 30px;
+    border-radius: 25px;
+    color: #fff;
+    top: 228px;
+    left: 28px;
+    font-size: 14px;
+    @extend %dmsans-700;
+  }
+
+  &-box {
+    background-color: #fff;
+    padding: 30px 27px 20px 27px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 170px;
+  }
+
+  &-box-title {
+    margin-bottom: 10px;
+  }
+
+  &-title {
+    max-width: 285px;
+    @extend %dmsans-500;
+    font-size: 18px;
+    color: #262626;
+  }
+
+  &-info {
+    display: flex;
+    justify-content: flex-start;
+    text-transform: uppercase;
+    align-items: center;
+    border-top: 1px solid #e0e0e0;
+  }
+
+  &-data,
+  &-author {
+    font-size: 12px;
+    @extend %rubik-400;
+    color: #222933;
+    padding-left: 15px;
+    position: relative;
+  }
+
+  &-data::before,
+  &-author::before {
+    content: "";
+    position: absolute;
+    height: 9px;
+    width: 6px;
+    left: 0;
+    top: 0;
+  }
+
+  &-data {
+    margin-right: 30px;
+  }
+}
+
+.partners {
+  padding: 85px 0;
+  position: relative;
+
+  &__container {
+    max-width: 1190px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__inner {
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 440px;
+    position: absolute;
+    top: -170px;
+    width: 100%;
+    z-index: -1;
+  }
+}
 
 
 
