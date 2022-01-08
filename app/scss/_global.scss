@@ -13,10 +13,13 @@ body{
 
 .container-footer,
 .products__container,
-.design-container {
-  max-width: 1190px;
+.design-container,
+.conditions__container,
+.about__container,
+.team__container {
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
 a{
@@ -32,3 +35,4 @@ a{
   @extend %dmsans-700;
   color: #191919;
 }
+

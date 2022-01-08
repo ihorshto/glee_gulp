@@ -18,7 +18,8 @@ const del          = require('del');
 function browsersync() {
   browserSync.init({
     server: {
-      baseDir: 'app/'
+      baseDir: 'app/',
+      index: "about-us.html"
     }
   });
 }
