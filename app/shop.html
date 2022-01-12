@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Glee register</title>
+  <title>Glee shop</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -67,7 +67,7 @@
     <section class="top">
       <div class="container">
         <h2 class="top__title">
-          Log in
+          Proaduct list 1
         </h2>
         <div class="breadcrumbs">
           <ul class="breadcrumbs__list">
@@ -75,43 +75,179 @@
               <a href="" class="breadcrumbs__link">Home</a>
             </li>
             <li class="breadcrumbs__item">
-              <a href="" class="breadcrumbs__link">Log in</a>
+              <a href="" class="breadcrumbs__link">Proaduct list 1</a>
             </li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section class="modal">
-      <div class="container">
-        <form class="modal__form">
-          <label class="modal__label">
-            Username or email address *
-            <input class="modal__input" type="text" required>
-          </label>
-          <label class="modal__label">
-            Password *
-            <input class="modal__input" type="text" required>
-          </label>
-          <button class="modal__btn" type="submit">
-            Login
-          </button>
-          <div class="modal__checkbox-box">
-            <label class="modal__checkbox">
-              <input type="checkbox" checked>
-              Remember me
-            </label>
-            <p class="modal__checkbox-text">
-              Lost your password?
-            </p>
+    <section class="shop">
+      <div class="shop__container">
+        <div class="shop__inner">
+          <div class="shop-filters filter">
+
+            <div class="filter-category filter__item">
+              <h3 class="filter__title">
+                CATEGORY
+              </h3>
+              <form class="filter-category__form" action="#">
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox" checked>
+                  <div class="filter-category__checkbox">
+                    <span>Chair</span>
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span>Table</span>
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span>Lamp</span>
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span>Watch</span>
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span>Clock</span>
+                  </div>
+                </label>
+              </form>
+            </div>
+
+            <div class="filter-price filter__item">
+              <h3 class="filter__title">PRICE</h3>
+              <form class="filter-price__form" action="#">
+                <input class="filter-price__input" type="text" data-min="100" data-max="500" data-from="200"
+                  data-to="350">
+                <label class="filter-price__label">
+
+                  <div class="filter-price__wrapper">
+                    $<span class="filter-price__from"></span>
+                  </div>
+                  <div class="filter-price__wrapper">
+                    $<span class="filter-price__to"></span>
+                  </div>
+                </label>
+              </form>
+            </div>
+
+            <div class="filter-brand filter__item">
+              <h3 class="filter__title">
+                BRAND
+              </h3>
+              <form class="filter-brand__form" action="#">
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox" checked>
+                  <div class="filter-brand__checkbox">
+                    <span>RFL</span>
+                    <span class="filter-brand__checkbox-num">(10)</span>
+                  </div>
+                </label>
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__checkbox">
+                    <span>Brothers</span>
+                    <span class="filter-brand__checkbox-num">(21)</span>
+                  </div>
+                </label>
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__checkbox">
+                    <span>Regal</span>
+                    <span class="filter-brand__checkbox-num">(3)</span>
+                  </div>
+                </label>
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__checkbox">
+                    <span>Nadia</span>
+                    <span class="filter-brand__checkbox-num">(14)</span>
+                  </div>
+                </label>
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__checkbox">
+                    <span>Otobi</span>
+                    <span class="filter-brand__checkbox-num">(6)</span>
+                  </div>
+                </label>
+              </form>
+            </div>
+
+            <div class="filter-products filter__item">
+              <h3 class="filter__title">
+                RECENT PRODUCTS
+              </h3>
+              <div class="filter-products__item">
+                <a class="filter-products__link" href="#">
+                  <div class="filter-products__img-box">
+                    <img class="filter-products__img" src="images/filters/filter-products/1.png"
+                      alt="filter product images">
+                  </div>
+                  <div class="filter-products__box">
+                    <h6 class="filter-products__title">
+                      Pendant lamp
+                    </h6>
+                    <div class="star" data-rateyo-rating="4"></div>
+                    <div class="filter-products__price">
+                      23$
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="filter-products__item">
+                <a class="filter-products__link" href="#">
+                  <div class="filter-products__img-box">
+                    <img class="filter-products__img" src="images/filters/filter-products/2.png"
+                      alt="filter product images">
+                  </div>
+                  <div class="filter-products__box">
+                    <h6 class="filter-products__title">
+                      Pendant lamp
+                    </h6>
+                    <div class="star" data-rateyo-rating="4"></div>
+                    <div class="filter-products__price">
+                      23$
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="filter-products__item">
+                <a class="filter-products__link" href="#">
+                  <div class="filter-products__img-box">
+                    <img class="filter-products__img" src="images/filters/filter-products/3.png"
+                      alt="filter product images">
+                  </div>
+                  <div class="filter-products__box">
+                    <h6 class="filter-products__title">
+                      Pendant lamp
+                    </h6>
+                    <div class="star" data-rateyo-rating="4"></div>
+                    <div class="filter-products__price">
+                      23$
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
           </div>
-          <p class="modal__text">
-            Not registered? No problem
-          </p>
-          <a class="modal__registration" href="#">
-            Create an account
-          </a>
-        </form>
+
+
+          <div class="shop-content"></div>
+        </div>
       </div>
     </section>
 
@@ -137,6 +273,7 @@
       </div>
       <div class="partners__inner partners-bg" style="background-image: url('images/partners-bg.jpg');"></div>
     </div>
+
 
   </main>
 
