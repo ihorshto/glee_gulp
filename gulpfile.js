@@ -19,8 +19,8 @@ function browsersync() {
   browserSync.init({
     server: {
       baseDir: 'app/',
-      index: "shop.html"
-    }
+      index: "shop_list2.html"
+    } 
   });
 }
 

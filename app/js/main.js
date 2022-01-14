@@ -1,7 +1,30 @@
 $ (function(){
 
+  $('.products-item__link-box2').on('click', function(){
+    $('.products-item__btn').addClass('products-item__btn--active');
+  });
+
+  $('.products-item__link-box2').on('click', function(){
+    $('.products-item__link-box').addClass('products-item__link-box--disabled');
+  });
+
+  $('.products-item__btn').on('click', function(){
+    $('.products-item__btn').removeClass('products-item__btn--active');
+  });
+
+  $('.products-item__btn').on('click', function(){
+    $('.products-item__link-box').removeClass('products-item__link-box--disabled');
+  });
+
   $('.star').rateYo({
     starWidth: "12px",
+    normalFill: "#ccccce",
+    ratedFill: "#ffc35b",
+    readOnly: true
+  });
+
+  $('.star-big').rateYo({
+    starWidth: "26px",
     normalFill: "#ccccce",
     ratedFill: "#ffc35b",
     readOnly: true
