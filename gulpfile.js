@@ -19,7 +19,7 @@ function browsersync() {
   browserSync.init({
     server: {
       baseDir: 'app/',
-      index: "shop_list2.html"
+      index: "product.html"
     } 
   });
 }
@@ -54,6 +54,7 @@ function scripts(){
     'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
     'node_modules/ion-rangeslider/js/ion.rangeSlider.js',
     'node_modules/rateyo/src/jquery.rateyo.js',
+    'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
     'app/js/main.js'
   ])
     .pipe(concat('main.min.js'))
