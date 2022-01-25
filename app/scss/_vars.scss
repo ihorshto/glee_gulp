@@ -46,6 +46,18 @@ $btn: #a3bbc8;
   color: #fff;
   padding: 12px 50px;
   border-radius: 5px;
-
   cursor: pointer;
+}
+
+%btn{
+  text-transform: uppercase;
+  border: none;
+  font-size: 15px;
+  @extend %rubik-400;
+  background-color: $btn;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  
 }
