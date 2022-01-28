@@ -1,0 +1,91 @@
+
+
+.design {
+  margin-top: 100px;
+  text-align: center;
+
+  &-container {
+    max-width: 1190px;
+    margin: 0 auto;
+  }
+
+  &__btn {
+    background-color: transparent;
+    border: none;
+    color: #8b8b8b;
+    cursor: pointer;
+    padding: 15px;
+    transition: .3s;
+    @extend %dmsans-700;
+
+    &:hover {
+      color: $black;
+    }
+  }
+
+  .mixitup-control-active {
+    color: #191919;
+  }
+
+  &__items {
+    margin: 75px 0 120px;
+    display: grid;
+    grid-template-columns: 370px 370px 370px;
+    grid-gap: 30px;
+  }
+
+  &-item {
+    max-width: 370px;
+    position: relative;
+    background-color: #f8f8f8;
+    position: relative;
+    overflow: hidden;
+    min-height: 250px;
+  }
+
+  &-item__one,
+  &-item__two,
+  &-item__four,
+  &-item__six {
+    position: absolute;
+    bottom: 40px;
+    left: 100px;
+  }
+
+  &-item__three,
+  &-item__five {
+    position: absolute;
+
+  }
+
+  &-item__three {
+    right: 55px;
+    bottom: 45px;
+  }
+
+  &-item__five {
+    right: 30px;
+    bottom: 30px;
+  }
+
+  &-item__box &-item__content {
+    position: absolute;
+    padding-left: 35px;
+    padding-top: 36px;
+    text-align: left;
+    top: 0;
+  }
+
+  &__title {
+    max-width: 175px;
+    margin-bottom: 3px;
+    font-size: 20px;
+    line-height: 26px;
+    color: #191919;
+    @extend %dmsans-700;
+  }
+
+  &__text {
+    color: #a3bbc8;
+  }
+}
