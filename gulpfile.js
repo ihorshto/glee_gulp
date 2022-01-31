@@ -21,8 +21,8 @@ function browsersync() {
   browserSync.init({
     server: {
       baseDir: 'app/',
-      index: "product.html"
-    } 
+    },
+    notify: false
   });
 }
 

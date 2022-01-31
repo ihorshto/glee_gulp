@@ -1,4 +1,3 @@
-
 .footer {
   background-color: $white;
 }
@@ -11,7 +10,7 @@
   &__contact {
     width: 200px;
     margin-right: 100px;
-  }  
+  }
 
   &__services {
     width: 170px;
@@ -46,6 +45,7 @@
     color: #1f2044;
     @extend %dmsans-700;
     line-height: 52px;
+    pointer-events: none;
   }
 
   &__list-item {
@@ -106,18 +106,128 @@
     display: flex;
   }
 
-  &__items {
+  &__item {
     padding: 0 15px;
     position: relative;
   }
 
-  &__items+.footer-bottom__items::before {
+  &__item+.footer-bottom__item::after {
     content: "";
     position: absolute;
-    height: 16px;
     width: 1px;
-    background-color: #7b7b7b;
+    height: 16px;
     left: 0;
     top: 6px;
+    background-color: #7b7b7b;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer-top {
+    flex-wrap: wrap;
+
+    &__item-form {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1060px) {
+  .footer-top {
+    &__account {
+      margin-right: 50px;
+    }
+
+    &__services {
+      margin-right: 100px;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .footer-top {
+    &__contact {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+
+    &__item-form {
+      margin-top: 15px;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .footer-bottom {
+    display: block;
+    text-align: center;
+
+    &__list {
+      justify-content: center;
+    }
+
+    &__copy {
+      margin-bottom: 15px;
+    }
+  }
+
+  .footer-top {
+    padding: 50px 0;
+
+    &__services {
+      margin-right: 50px;
+    }
+
+    &__account {
+      margin-right: 0;
+      width: 170px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .footer-top {
+    &__title{
+      padding-bottom: 0;
+      pointer-events: auto;
+    }
+    &__list {
+      display: none;
+    }
+
+    &__title-click {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        height: 18px;
+        width: 16px;
+        right: 65px;
+        top: 16px;
+        background-image: url('../../images/icons/arrow-down-solid.svg');
+        transition: all .3s;
+      }
+    }
+
+    &__title-click.active {
+      position: relative;
+
+      .footer-top__list {
+        display: block;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        height: 18px;
+        width: 16px;
+        right: 65px;
+        top: 16px;
+        background-image: url('../../images/icons/arrow-up-solid.svg');
+        transition: all .3s;
+      }
+    }
   }
 }

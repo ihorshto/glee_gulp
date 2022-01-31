@@ -1,5 +1,14 @@
 $(function () {
 
+  $('.menu__btn').on('click', function(){
+    $('.menu__list').toggleClass('menu__list--active');
+  });
+
+  $('.footer-top__title-click').on('click', function () {
+    $(this).next('.footer-top__list').slideToggle();
+    $(this).toggleClass('active');
+  });
+
   $('.related__slider').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
