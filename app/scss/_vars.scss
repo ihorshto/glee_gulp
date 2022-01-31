@@ -1,29 +1,63 @@
 $blue-l: #436372;
-$blue: #243f4d; 
+$blue: #243f4d;
 $white: #ffffff;
 $black: #191919;
+$btn: #a3bbc8;
 
-%rubik-400{
+%rubik-400 {
   font-family: 'Rubik-Regular', sans-serif;
   font-weight: 400;
 }
 
-%rubik-500{
+%rubik-500 {
   font-family: 'Rubik-Medium', sans-serif;
   font-weight: 500;
 }
 
-%dmsans-400{
+%dmsans-400 {
   font-family: 'DMSans-Regular', sans-serif;
   font-weight: 400;
 }
 
-%dmsans-500{
+%dmsans-500 {
   font-family: 'DMSans-Medium', sans-serif;
   font-weight: 500;
 }
 
-%dmsans-700{
+%dmsans-700 {
   font-family: 'DMSans-Bold', sans-serif;
   font-weight: 700;
+}
+
+%checkbox-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
+%btn_add {
+  text-transform: uppercase;
+  border: none;
+  font-size: 15px;
+  @extend %rubik-400;
+  background-color: $btn;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+%btn{
+  text-transform: uppercase;
+  border: none;
+  font-size: 15px;
+  @extend %rubik-400;
+  background-color: $btn;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  
 }

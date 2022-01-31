@@ -1,0 +1,27 @@
+.partners {
+  padding: 85px 0;
+  position: relative;
+
+  &__container {
+    max-width: 1190px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__inner {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 440px;
+    position: absolute;
+    top: -172px;
+    width: 100%;
+    z-index: -1;
+
+  }
+}

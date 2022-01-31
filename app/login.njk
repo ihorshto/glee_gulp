@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glee login</title>
+  <link rel="stylesheet" href="css/login.min.css">
+</head>
+
+<body>
+
+ {% include 'app/module/_header/_header.html' %}
+
+  <main>
+
+    <section class="top">
+      <div class="container">
+        <h2 class="top__title">
+          Log in
+        </h2>
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a href="" class="breadcrumbs__link">Home</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="" class="breadcrumbs__link">Log in</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="modal">
+      <div class="container">
+        <form class="modal__form">
+          <label class="modal__label">
+            Username or email address *
+            <input class="modal__input" type="text" required>
+          </label>
+          <label class="modal__label">
+            Password *
+            <input class="modal__input" type="text" required>
+          </label>
+          <button class="modal__btn" type="submit">
+            Login
+          </button>
+          <div class="modal__checkbox-box">
+            <label class="modal__checkbox">
+              <input type="checkbox" checked>
+              Remember me
+            </label>
+            <p class="modal__checkbox-text">
+              Lost your password?
+            </p>
+          </div>
+          <p class="modal__text">
+            Not registered? No problem
+          </p>
+          <a class="modal__registration" href="#">
+            Create an account
+          </a>
+        </form>
+      </div>
+    </section>
+
+    <div class="partners">
+      <div class="partners__container">
+        <div class="partners__items">
+          <div class="partners__item">
+            <img class="partners__item-img" src="images/partners/1.png" alt="partners image">
+          </div>
+          <div class="partners__item">
+            <img class="partners__item-img" src="images/partners/2.png" alt="partners image">
+          </div>
+          <div class="partners__item">
+            <img class="partners__item-img" src="images/partners/3.png" alt="partners image">
+          </div>
+          <div class="partners__item">
+            <img class="partners__item-img" src="images/partners/4.png" alt="partners image">
+          </div>
+          <div class="partners__item">
+            <img class="partners__item-img" src="images/partners/5.png" alt="partners image">
+          </div>
+        </div>
+      </div>
+      <div class="partners__inner partners-bg" style="background-image: url('images/partners-bg.jpg');"></div>
+    </div>
+
+  </main>
+
+  {% include 'app/module/_footer/_footer.html' %}
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

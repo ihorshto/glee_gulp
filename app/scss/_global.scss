@@ -6,7 +6,41 @@ body{
 }
 
 .container{
-  max-width: 1790px;
+  max-width: 1800px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 15px;
+}
+
+.container-footer,
+.products__container,
+.design-container,
+.conditions__container,
+.about__container,
+.team__container,
+.shop__container,
+.product__container,
+.related__container,
+.blog__container,
+.contact__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+a{
+  font-size: 14px;
+  line-height: 26px;
+  color: #7b7b7b;
+  @extend %rubik-400;
+}
+
+.title{
+  font-size: 36px;
+  line-height: 40px;
+  @extend %dmsans-700;
+  color: #191919;
+}
+
+.partners-bg.partners__inner{
+  top: 0;
 }
