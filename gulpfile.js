@@ -12,7 +12,7 @@ const browserSync       = require('browser-sync').create();
 const uglify            = require('gulp-uglify-es').default;
 const autoprefixer      = require('gulp-autoprefixer');
 const imagemin          = require('gulp-imagemin');
-const rename          = require('gulp-rename');
+const rename            = require('gulp-rename');
 const nunjucksRender    = require('gulp-nunjucks-render');
 const del               = require('del');
 

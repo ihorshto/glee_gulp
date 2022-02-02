@@ -129,7 +129,7 @@
     &__list {
       transform: translateY(-200%);
       position: absolute;
-      top: 130px;
+      top: 105px;
       width: 100%;
       left: 0;
       background-color: #fff;
@@ -202,9 +202,6 @@
 @media (max-width: 600px) {
   .menu {
     order: 0;
-    &__list{
-      top: 170px;
-    }
   }
 
   .user-nav {
