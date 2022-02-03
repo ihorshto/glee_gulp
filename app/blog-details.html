@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page </title>
   <link rel="stylesheet" href="css/blog-details.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" type="text/css" href="">
+  <script src="https://kit.fontawesome.com/e31f3bc1d7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -257,15 +260,24 @@
               </div>
             </div> 
            
-            <form class="comments-form">
+             <form class="comments-form">
               <p class="comments-form__title">
                 Leave A Comment
               </p>
               <div class="comments-form__box-input">
-                <input class="comments-form__text-input" placeholder="Name" type="text">
-                <input class="comments-form__text-input" placeholder="youremail@gmail.com" type="text">
+                <div class="inputWithIcon">
+                  <input class="comments-form__text-input" placeholder="Name" type="text">
+                  <i class="far fa-user"></i>
+                 </div>
+                 <div class="inputWithIcon">
+                  <input class="comments-form__text-input" placeholder="youremail@gmail.com" type="text">
+                  <i class="far fa-envelope"></i>
+                </div>
               </div>
-              <textarea class="comments-form__textarea" placeholder="Comment"></textarea>
+              <div class="inputWithIcon">
+                <textarea class="comments-form__textarea" placeholder="Comment"></textarea>
+                <i class="far fa-comment-alt"></i>
+              </div>
               <button class="comments-form__btn" type="submit">
                 Post Comment
               </button>
@@ -389,7 +401,7 @@
       </div>
     </section>
 
-    <div class="partners">
+       <div class="partners">
       <div class="partners__container">
         <div class="partners__items">
           <div class="partners__item">
@@ -409,7 +421,7 @@
           </div>
         </div>
       </div>
-      <div class="partners__inner partners-bg" style="background-image: url('images/partners-bg.jpg');"></div>
+      <div class="partners__inner partners-static" style="background-image: url('images/partners-bg.jpg');"></div>
     </div>
 
   </main>
@@ -424,7 +436,7 @@
           <a class="footer-top__adress" href="#">
             ADDRESS: 4772 Wines Lane Houston, TX 77032
           </a>
-          <a class="footer-top__phone" href="tel:+380988904494">
+          <a class="footer-top__phone" href="tel:0988904494">
             TELEPHONE: +38 098 89 04 494
           </a>
           <a class="footer-top__email" href="#">
@@ -436,7 +448,7 @@
             Services
           </h6>
           <ul class="footer-top__list">
-            <li class="footer-top__list-item">
+            <li class="footer-top__list-item">+
               <a class="footer-top__list-link" href="#">
                 About us
               </a>

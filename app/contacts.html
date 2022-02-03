@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page </title>
   <link rel="stylesheet" href="css/contacts.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script src="https://kit.fontawesome.com/e31f3bc1d7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -161,16 +163,29 @@
           </div>
 
           <div class="contact-bottom">
-            <form class="contact__form" action="#">
-             <div class="contact__form-box">
-               <input class="contact__form-input contact__form-input--name" placeholder="NAME" type="text">
-               <input class="contact__form-input contact__form-input--email" placeholder="EMAIL" type="text">
-             </div> 
-             <textarea class="contact__form-textarea" placeholder="MESSAGE"></textarea>
-             <button class="contact__form-btn" type="submit">
-              SEND MESSAGE
-             </button>
-            </form>
+            
+              
+  <form class="contact__form" action="#">
+    <div class="contact__form-box">
+      <div class="inputWithIcon">
+        <input class="contact__form-input  contact__form-input--name" placeholder="NAME" type="text">
+        <i class="far fa-user"></i>
+      </div>
+      <div class="inputWithIcon">
+        <input class="contact__form-input contact__form-input--email" placeholder="EMAIL" type="text">
+        <i class="far fa-envelope"></i>
+      </div>
+    </div> 
+    <div class="inputWithIcon">
+      <textarea class="contact__form-textarea" placeholder="MESSAGE"></textarea>
+      <i class="far fa-comment-alt"></i>
+    </div>
+    <button class="contact__form-btn" type="submit">
+      SEND MESSAGE
+    </button>
+  </form>
+
+
             <div class="map">
               <div id="map"></div>
             </div>
@@ -180,10 +195,11 @@
       </div>   
     </section>
 
+  
     <section class="articles">
       <div class="articles-container">
         <div class="articles__inner">
-          <h2 class="title"> 
+          <h2 class="articles__title title">
             Our Insights & Articles
           </h2>
           <a class="articles__link" href="">
@@ -222,6 +238,7 @@
             </div>
           </div>
 
+
           <div class="articles__item">
             <div class="articles__item-box">
               <a class="articles__item-link" href="#">
@@ -283,8 +300,7 @@
       </div>
       </div>
     </section>
-
-    <div class="partners">
+   <div class="partners">
       <div class="partners__container">
         <div class="partners__items">
           <div class="partners__item">
@@ -305,7 +321,7 @@
         </div>
       </div>
       <div class="partners__inner" style="background-image: url('images/partners-bg.jpg');"></div>
-    </div>
+    </div> 
 
   </main>
 
@@ -319,7 +335,7 @@
           <a class="footer-top__adress" href="#">
             ADDRESS: 4772 Wines Lane Houston, TX 77032
           </a>
-          <a class="footer-top__phone" href="tel:+380988904494">
+          <a class="footer-top__phone" href="tel:0988904494">
             TELEPHONE: +38 098 89 04 494
           </a>
           <a class="footer-top__email" href="#">
@@ -331,7 +347,7 @@
             Services
           </h6>
           <ul class="footer-top__list">
-            <li class="footer-top__list-item">
+            <li class="footer-top__list-item">+
               <a class="footer-top__list-link" href="#">
                 About us
               </a>

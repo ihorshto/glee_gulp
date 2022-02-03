@@ -1,4 +1,3 @@
-
 .video-design {
   margin-bottom: 115px;
 
@@ -13,3 +12,42 @@
     justify-content: center;
   }
 }
+
+@media(max-width: 1060px) {
+  .video-design {
+    margin-bottom: 90px;
+    &__popup {
+      height: 370px;
+    }
+  }
+}
+
+@media(max-width: 750px) {
+  .video-design {
+    margin-bottom: 60px;
+    &__popup {
+      height: 300px;
+    }
+  }
+}
+
+@media(max-width: 600px) {
+  .video-design {
+    &__popup {
+      height: 250px;
+    }
+
+    &__play {
+      width: 90px;
+    }
+  }
+}
+
+@media(max-width: 420px) {
+  .video-design {
+    &__popup {
+      height: 210px;
+    }
+  }
+}
+  
