@@ -1576,64 +1576,12 @@
   }
 }
 
+
+
 .comments-box {
   margin-bottom: 85px;
 }
 
-.comments-form {
-  &__title {
-    font-size: 24px;
-    @extend %dmsans-700; //rubik-700
-    color: #436372;
-    margin-bottom: 40px;
-  }
-
-  &__box-input {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  &__text-input {
-    width: 400px;
-    height: 50px;
-    border: 1px solid #e5e5e5;
-    padding: 0 20px;
-    color: #333333;
-    position: relative;
-
-    &::placeholder {
-      color: #999999;
-    }
-  }
-
-  &__textarea {
-    width: 100%;
-    height: 120px;
-    padding: 10px 20px;
-    @extend %rubik-400;
-    color: #333333;
-    resize: none;
-    border: 1px solid #e5e5e5;
-    margin-bottom: 40px;
-
-    &::placeholder {
-      color: #999999;
-    }
-  }
-
-  &__btn {
-    text-transform: uppercase;
-    border: 0;
-    font-size: 14px;
-    line-height: 21px;
-    color: #fff;
-    background-color: #a3bbc8;
-    padding: 16px 40px;
-    display: inline-block;
-    cursor: pointer;
-  }
-}
 
 .contact {
   margin: 120px 0 135px;
@@ -1726,66 +1674,6 @@
     justify-content: space-between;
   }
 
-  &__form {
-    width: 620px;
-    margin-right: 50px;
-  }
-
-  &__form-box {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  &__form-input {
-    width: 300px;
-    height: 50px;
-    background-color: #fafafa;
-    padding: 0 40px 0 22px;
-    margin-bottom: 25px;
-    border: none;
-    position: relative;
-
-    &::placeholder {
-      color: #565872;
-      @extend %rubik-400;
-    }
-  }
-
-  // &__form-input {
-  //   position: relative;
-
-  //   &::after {
-  //     content: "";
-  //     position: absolute;
-  //     background-image: url('../images/icons/user-form.svg');
-  //     width: 14px;
-  //     height: 13px;
-  //     right: 0;
-  //     top: 0;
-  //     z-index: 10;
-  //   }
-  // }
-
-  &__form-textarea {
-    width: 100%;
-    height: 175px;
-    padding: 12px 22px;
-    background-color: #fafafa;
-    border: none;
-    resize: none;
-    margin-bottom: 30px;
-    display: block;
-
-    &::placeholder {
-      color: #565872;
-      @extend %rubik-400;
-    }
-  }
-
-  &__form-btn {
-    @extend %btn;
-    @extend %rubik-500;
-  }
 }
 
 .map {}

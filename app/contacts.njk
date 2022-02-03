@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page </title>
   <link rel="stylesheet" href="css/contacts.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script src="https://kit.fontawesome.com/e31f3bc1d7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -109,16 +111,9 @@
           </div>
 
           <div class="contact-bottom">
-            <form class="contact__form" action="#">
-             <div class="contact__form-box">
-               <input class="contact__form-input contact__form-input--name" placeholder="NAME" type="text">
-               <input class="contact__form-input contact__form-input--email" placeholder="EMAIL" type="text">
-             </div> 
-             <textarea class="contact__form-textarea" placeholder="MESSAGE"></textarea>
-             <button class="contact__form-btn" type="submit">
-              SEND MESSAGE
-             </button>
-            </form>
+            
+              {% include 'app/module/_contact-form/_contact-form.html' %}
+
             <div class="map">
               <div id="map"></div>
             </div>
@@ -128,132 +123,8 @@
       </div>   
     </section>
 
-    <section class="articles">
-      <div class="articles-container">
-        <div class="articles__inner">
-          <h2 class="title"> 
-            Our Insights & Articles
-          </h2>
-          <a class="articles__link" href="">
-            View All
-          </a>
-        </div>
-
-        <div class="articles__items">
-
-          <div class="articles__item">
-            <div class="articles__item-box">
-              <a class="articles__item-link" href="#">
-                <img class="articles__item-img" src="images/article/1.jpg" alt="articles image">
-              </a>
-              <a class="articles-linknews" href="#">
-                <span class="articles-news">NEWS</span>
-              </a>
-            </div>
-            <div class="articles__item-inner">
-              <div class="articles__inner-content">
-
-                <a class="articles__content-link" href="#">
-                  <h4 class="articles__content-title">
-                    Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                  </h4>
-                </a>
-              </div>
-              <div class="articles__info">
-                <div class="articles__info-data">
-                  28 JANUARY, 2020
-                </div>
-                <a class="articles__info-author" href="#">
-                  BY ADMIN
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="articles__item">
-            <div class="articles__item-box">
-              <a class="articles__item-link" href="#">
-                <img class="articles__item-img" src="images/article/1.jpg" alt="articles image">
-              </a>
-              <a class="articles-linknews" href="#">
-                <span class="articles-news">NEWS</span>
-              </a>
-            </div>
-            <div class="articles__item-inner">
-              <div class="articles__inner-content">
-
-                <a class="articles__content-link" href="#">
-                  <h4 class="articles__content-title">
-                    Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                  </h4>
-                </a>
-              </div>
-              <div class="articles__info">
-                <div class="articles__info-data">
-                  28 JANUARY, 2020
-                </div>
-                <a class="articles__info-author" href="#">
-                  BY ADMIN
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="articles__item">
-            <div class="articles__item-box">
-              <a class="articles__item-link" href="#">
-                <img class="articles__item-img" src="images/article/1.jpg" alt="articles image">
-              </a>
-              <a class="articles-linknews" href="#">
-                <span class="articles-news">NEWS</span>
-              </a>
-            </div>
-            <div class="articles__item-inner">
-              <div class="articles__inner-content">
-
-                <a class="articles__content-link" href="#">
-                  <h4 class="articles__content-title">
-                    Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                  </h4>
-                </a>
-              </div>
-              <div class="articles__info">
-                <div class="articles__info-data">
-                  28 JANUARY, 2020
-                </div>
-                <a class="articles__info-author" href="#">
-                  BY ADMIN
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-    </section>
-
-    <div class="partners">
-      <div class="partners__container">
-        <div class="partners__items">
-          <div class="partners__item">
-            <img class="partners__item-img" src="images/partners/1.png" alt="partners image">
-          </div>
-          <div class="partners__item">
-            <img class="partners__item-img" src="images/partners/2.png" alt="partners image">
-          </div>
-          <div class="partners__item">
-            <img class="partners__item-img" src="images/partners/3.png" alt="partners image">
-          </div>
-          <div class="partners__item">
-            <img class="partners__item-img" src="images/partners/4.png" alt="partners image">
-          </div>
-          <div class="partners__item">
-            <img class="partners__item-img" src="images/partners/5.png" alt="partners image">
-          </div>
-        </div>
-      </div>
-      <div class="partners__inner" style="background-image: url('images/partners-bg.jpg');"></div>
-    </div>
+  {% include 'app/module/_articles/_articles.html' %}
+  {% include 'app/module/_partners/_partners.html' %} 
 
   </main>
 

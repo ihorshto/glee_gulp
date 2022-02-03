@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page </title>
   <link rel="stylesheet" href="css/blog-details.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" type="text/css" href="">
+  <script src="https://kit.fontawesome.com/e31f3bc1d7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -205,19 +208,7 @@
               </div>
             </div> 
            
-            <form class="comments-form">
-              <p class="comments-form__title">
-                Leave A Comment
-              </p>
-              <div class="comments-form__box-input">
-                <input class="comments-form__text-input" placeholder="Name" type="text">
-                <input class="comments-form__text-input" placeholder="youremail@gmail.com" type="text">
-              </div>
-              <textarea class="comments-form__textarea" placeholder="Comment"></textarea>
-              <button class="comments-form__btn" type="submit">
-                Post Comment
-              </button>
-            </form>
+            {% include 'app/module/_comments-form/_comments-form.html' %}
 
           </div>
 
@@ -337,28 +328,7 @@
       </div>
     </section>
 
-    <div class="partners">
-      <div class="partners__container">
-        <div class="partners__items">
-          <div class="partners__item">
-            <img class="partners__item-img" src="images/partners/1.png" alt="partners image">
-          </div>
-          <div class="partners__item">
-            <img class="partners__item-img" src="images/partners/2.png" alt="partners image">
-          </div>
-          <div class="partners__item">
-            <img class="partners__item-img" src="images/partners/3.png" alt="partners image">
-          </div>
-          <div class="partners__item">
-            <img class="partners__item-img" src="images/partners/4.png" alt="partners image">
-          </div>
-          <div class="partners__item">
-            <img class="partners__item-img" src="images/partners/5.png" alt="partners image">
-          </div>
-        </div>
-      </div>
-      <div class="partners__inner partners-bg" style="background-image: url('images/partners-bg.jpg');"></div>
-    </div>
+      {% include 'app/module/_partners-static/_partners-static.html' %}
 
   </main>
 
