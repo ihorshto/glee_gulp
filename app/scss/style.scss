@@ -1188,7 +1188,7 @@
 
 .box-info {
   position: absolute;
-  bottom: -1px;
+  bottom: 0;
   background-color: #a3bbc8;
   height: 70px;
   padding: 0 30px 0 40px;
@@ -1232,6 +1232,7 @@
       top: -7px;
     }
   }
+
 }
 
 .search {
