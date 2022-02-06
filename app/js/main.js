@@ -28,6 +28,25 @@ $(function () {
     $('.shop-content__inner').removeClass('shop-content__inner--list')
   });
 
+
+  $('.products-item__btn').on('click', function () {
+    $('.products-item__btn').addClass('products-item__btn--disabled');
+    $('.products-item__box-btn').addClass('products-item__box-btn--active');
+  });
+
+  $('.products-item__heart-btn').on('click', function () {
+    $(this).toggleClass('products-item__heart-btn--active');
+  });
+
+  $('.products-item__cart-btn.products-item__cart-btn--active').on('click', function () {
+    $('.products-item__box-btn').removeClass('products-item__box-btn--active');
+  });
+
+  $('.products-item__cart-btn.products-item__cart-btn--active').on('click', function () {
+    $('.products-item__btn').removeClass('products-item__btn--disabled');
+  });
+
+
   $('.related__slider').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -97,12 +116,12 @@ $(function () {
     readOnly: true
   });
 
-   $('.products-item__star').rateYo({
-     starWidth: "22px",
-     normalFill: "#ccccce",
-     ratedFill: "#ffc35b",
-     readOnly: true
-   });
+  $('.products-item__star').rateYo({
+    starWidth: "22px",
+    normalFill: "#ccccce",
+    ratedFill: "#ffc35b",
+    readOnly: true
+  });
 
   $('.filter-price__input').ionRangeSlider({
     type: "double",
