@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Glee shop</title>
   <link rel="stylesheet" href="css/shop.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -18,7 +19,7 @@
     <section class="top">
       <div class="container">
         <h2 class="top__title">
-          Proaduct list 1
+          Product list 1
         </h2>
         <div class="breadcrumbs">
           <ul class="breadcrumbs__list">
@@ -26,7 +27,7 @@
               <a href="" class="breadcrumbs__link">Home</a>
             </li>
             <li class="breadcrumbs__item">
-              <a href="" class="breadcrumbs__link">Proaduct list 1</a>
+              <a href="" class="breadcrumbs__link">Product list 1</a>
             </li>
           </ul>
         </div>
@@ -982,28 +983,7 @@
       </div>
     </section>
 
-    <div class="partners">
-      <div class="partners__container">
-        <div class="partners__items">
-          <div class="partners__item">
-            <img class="partners__item-img" src="images/partners/1.png" alt="partners image">
-          </div>
-          <div class="partners__item">
-            <img class="partners__item-img" src="images/partners/2.png" alt="partners image">
-          </div>
-          <div class="partners__item">
-            <img class="partners__item-img" src="images/partners/3.png" alt="partners image">
-          </div>
-          <div class="partners__item">
-            <img class="partners__item-img" src="images/partners/4.png" alt="partners image">
-          </div>
-          <div class="partners__item">
-            <img class="partners__item-img" src="images/partners/5.png" alt="partners image">
-          </div>
-        </div>
-      </div>
-      <div class="partners__inner partners-bg" style="background-image: url('images/partners-bg.jpg');"></div>
-    </div>
+    {% include 'app/module/_partners-static/_partners-static.html' %}
 
   </main>
 
