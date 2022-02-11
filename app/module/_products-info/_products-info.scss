@@ -40,7 +40,7 @@
 
 .products-item {
   max-width: 270px;
-  width: 100%;
+  width: 99%;
   height: 380px;
   background-color: #fcfcfc;
   text-align: center;
@@ -156,15 +156,15 @@
   }
 
   &__link-box1 {
-    transform: translateX(-500%);
+    transform: translateX(-600%);
   }
 
   &__link-box2 {
-    transform: translateY(-500%);
+    transform: translateY(-600%);
   }
 
   &__link-box3 {
-    transform: translateX(500%);
+    transform: translateX(600%);
   }
 
   &__link {
@@ -293,11 +293,11 @@
     &__content {
       grid-template-columns: repeat(3, 1fr);
       grid-template-columns: repeat(3, 1fr);
-      grid-column-gap: 15px;
     }
 
     &-item {
-      width: 270px;
+
+      max-width: 100%;
       margin: 0 auto;
     }
   }
